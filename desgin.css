@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #47004C;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo img, .logotext img {
+    width: 60px; /* Adjusted width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    gap: 0; /* No gap between logo and logo text */
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-right: 90px;
+    gap: 20px;
+}
+
+.nav ul li a {
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.download-app {
+    text-align: right;
+}
+
+.download-app button {
+    background-color: white;
+    color: #47004C;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #47004C;
+    color: white;
+}
+.oval1{
+    width: 1027.68px;
+    height: 1027.68px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 9%;
+    top: -830.46px;
+    right: 1198.71px;
+}
+
+.wave {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px; /* Increased height */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+    width: 325px;
+}
+
+.app-buttons a img {
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.hero-image img {
+    width: 350px; /* Increased width */
+    position: relative;
+}
+
+.about {
+    background-color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Adjust gap as needed */
+}
+
+.about-content p {
+    flex: 2;
+    color: #333;
+}
+
+.about-content img {
+    flex: 1;
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 200px;
+}
+
+.line {
+    background-color: black;
+    height: 2px;
+    width: 40px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.occasions, .offers, .how-to-order, .features {
+    padding: 2rem 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 8rem;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.number-image {
+    position: absolute;
+    top: -16px;
+    left: 7%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: auto;
+}
+
+
+.features .card {
+    padding: 1.5rem;
+}
+
+.features .card p:first-of-type {
+    font-size: 25px;
+    font-weight: bold;
+}
+.faq {
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.faq .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.faq-questions {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.faq-item h3 {
+    width: 470px;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.faq-item img{
+    position: relative;
+    top: -34px;
+    left: 85%;
+    width: 25px;
+}
+.faq-item p {
+    margin-top: -20px;
+    width: 480px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.faq-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-image img {
+    max-width: 50%;
+    height: auto;
+}
+footer {
+    background-color: #47004C;
+    padding: 40px 0;
+    position: relative; /* Ensure footer is positioned relative */
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative; /* Needed to position the background div */
+}
+
+.footer-background {
+    position: absolute;
+    bottom: 255px;;
+    right: -152px;
+    width: 133%;
+    height: 180px;
+    background-color: white;
+    z-index: 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.footer-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #72007A;
+    border-radius: 30px;
+    background-image: url('background\ footer.png');
+    background-size: contain;
+    height: 250px;
+    z-index: 1; /* Ensure it stays above the background div */
+}
+
+.footer-card h2 {
+    color: #fff;
+    font-size: 24px;
+    width: 530px;
+    margin: 0;
+}
+
+.footer-card p {
+    width: 350px;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+.app-buttons {
+    display: flex;
+    margin-left: 20px;
+}
+
+.app-buttons a {
+    margin: 0 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 8px;
+    margin: 0;
+    color: white;
+}
+
+.footer-bottom-links {
+    display: flex;
+}
+
+.footer-bottom-links a {
+    font-size: 8px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    width: 24px;
+    height: 24px;
+}
