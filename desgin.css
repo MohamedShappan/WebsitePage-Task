@@ -17,7 +17,6 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -318,6 +317,7 @@ body {
 
 .card {
     position: relative;
+    width: 200px;
     background: #f9f9f9;
     border-radius: 10px;
     text-align: center;
@@ -600,14 +600,26 @@ footer {
         right: 40%;
     }
     .grid-3 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 0.8fr);
     }
 
     .grid-4 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 0.8fr);
     }
     .phone{
         width: 200px
+    }
+    .card p{
+        font-size: 23px;
+    }
+    .card h4{
+        font-size: 30px;
+    }
+    .card img{
+        max-width: 22vw;
+    }
+    .number-image{
+        width: 30px;
     }
     .hero-image .dots-image{
         display: none;
@@ -647,11 +659,14 @@ footer {
         top: -133%;
         right: 40%;
     }
+    .hero-content h1{
+        font-size: x-large;
+    }
     .hero-content p{
-        font-size: 10px;
+        font-size: 14px;
     }
     .hero-content h5{
-        font-size: 11px;
+        font-size: 15;
         margin-bottom: 1rem;
     }
     .wave{
@@ -673,15 +688,28 @@ footer {
         width: 30vw;
     }
     .features .card p:first-of-type {
-        font-size: 4vw;
+        font-size:5vw;
+    }
+    .card{
+        width: 150px;
     }
     .card p{ 
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .footer-container{
+            margin-top: -48px;
     }
     .footer-background{
         bottom: 11vw;
     }
     .footer-card{
-        bottom: 18vw;
+        bottom: 7vw;
+    }
+    .footer-card div h2{
+        margin-left: 30px;
+        margin-top: 13px;
+    }
+    .footer-card div p{
+        margin-left: 30px;
     }
 }
