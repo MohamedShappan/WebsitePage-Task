@@ -13,7 +13,6 @@ body {
 .header {
     background-color: #47004C;
     color: white;
-    padding: 1rem 0;
 }
 
 .container {
@@ -638,8 +637,28 @@ footer {
     .line{
             margin-bottom: 0px
     }
+    .oval2{
+        top: -60%;
+        right: 60%;
+    }
+    .oval3{
+        width: 700px;
+        height: 700px;
+        top: -133%;
+        right: 40%;
+    }
+    .hero-content p{
+        font-size: 10px;
+    }
+    .hero-content h5{
+        font-size: 11px;
+        margin-bottom: 1rem;
+    }
+    .wave{
+        bottom: -12px;;
+    }
     .phone {
-        width: 100px;
+        width: 145px;
     }
     .questionstyle h3{
         font-size: 17px;
