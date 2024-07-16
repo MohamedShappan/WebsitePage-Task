@@ -35,18 +35,26 @@
                 <button id="en-btn" class="lang-btn">EN</button>
                 <button id="ar-btn" class="lang-btn">AR</button>
             </div>
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
         </div>
     </header>
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+        <ul>
+            <li><a href="#" data-en="Categories" data-ar="التصنيفات">Categories</a></li>
+            <li><a href="#" data-en="Shops" data-ar="المتاجر">Shops</a></li>
+            <li><a href="#" data-en="Features" data-ar="المميزات">Features</a></li>
+            <li><a href="#" data-en="How To Order" data-ar="كيفية الطلب">How To Order</a></li>
+            <li><a href="#" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
+            <li><a href="#" data-en="Download App" data-ar="تحميل التطبيق">Download App</a></li>
+            <button id="en-btn" class="lang-btn">English</button>
+            <button id="ar-btn" class="lang-btn">Arabic</button>
+    </aside>
     <main class="content">
         <section class="hero">
             <div class="oval1"></div>
-            <div class="oval1" style="top: -690.46px;right: 1017px;opacity: 10%;"></div>
-            <div class="oval1" style="top: -506.46px;right: 854px;opacity: 4%;"></div>
-            <div class="wave">
-                <svg width="1440" height="300" viewBox="0 0 1440 209" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 79.445C0 79.445 203.75 186.711 342.946 178.031C482.143 169.35 565.528 133.572 718.478 151.461C871.428 169.35 1315.06 124.218 1440 0V209H0V79.445Z" fill="#FDFDFF"/>
-                </svg>
-            </div>
+            <div class="oval2"></div>
+            <div class="oval3"></div>
             <div class="container">
                 <div class="hero-content">
                     <h1 data-en="Organize Your Event With Ease" data-ar="نظم مناسبتك بسهولة">Organize Your Event With Ease</h1>
@@ -58,9 +66,14 @@
                     </div>
                 </div>
                 <div class="hero-image">
+                    <img src="phone.png" alt="App Screenshot" class="phone">
                     <img id="dotsImage" src="dots.png" alt="dots" class="dots-image">
-                    <img src="phone.png" alt="App Screenshot" style="width: 350px;position: relative;">
                 </div>
+            </div>
+            <div class="wave">
+                <svg width="1440" height="300" viewBox="0 0 1440 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 79.445C0 79.445 203.75 186.711 342.946 178.031C482.143 169.35 565.528 133.572 718.478 151.461C871.428 169.35 1315.06 124.218 1440 0V209H0V79.445Z" fill="#FDFDFF"/>
+                </svg>
             </div>
         </section>
         <section class="about">
@@ -230,7 +243,7 @@
         </div>
     </div>
 </section>
-<section class="hero" style="height: 600px; margin-top: 100px;">
+<section class="hero" style="height: fit-content; margin-top: 100px;">
     <div class="container">
         <div class="hero-content">
             <h1 data-en="Start Organizing Your Event Now" data-ar="ابدأ بتنظيم مناسبتك الآن">Start Organizing Your Event Now</h1>
@@ -296,11 +309,11 @@
     </div>
 </section>
 <footer>
+    <div class="footer-background"></div>
     <div class="footer-container">
-        <div class="footer-background"></div> <!-- New background div -->
         <div class="footer-content">
             <div class="footer-card">
-                <div style="margin-right: 88px; margin-bottom: 32px;">
+                <div>
                     <h2 data-en="Plan Your Perfect Occasion with MonasabaTech" data-ar="خطط لمناسبتك المثالية مع MonasabaTech">Plan Your Perfect Occasion with MonasabaTech</h2>
                     <p data-en="Download MonasabaTech Now and Make Your Celebrations Unforgettable!" data-ar="حمل MonasabaTech الآن واجعل احتفالاتك لا تُنسى!">Download MonasabaTech Now and Make Your Celebrations Unforgettable!</p>
                 </div>
@@ -357,6 +370,14 @@
                 }
             });
         });
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+            }
+        }
     </script>
 </body>
 </html>
