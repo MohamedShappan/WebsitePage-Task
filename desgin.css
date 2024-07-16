@@ -647,7 +647,7 @@ footer {
 }
 @media (max-width: 500px){
     .line{
-            margin-bottom: 0px
+        display: none;
     }
     .oval2{
         top: -60%;
