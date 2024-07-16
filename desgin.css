@@ -472,10 +472,9 @@ footer {
 }
 
 .footer-card p {
-    width: 25vw;
+    width: 32vw;
     color: #fff;
     font-size: 1vw;
-    margin: 10px 0 0;
 }
 
 .app-buttons {
@@ -705,12 +704,8 @@ footer {
     .footer-card{
         bottom: 7vw;
     }
-    .footer-card div h2{
-        margin-left: 30px;
-        margin-top: 8px;
+    .footer-card div{
+        text-align: center;
     }
-    .footer-card div p{
-        margin-left: 30px;
-        margin-top: 0px;
-    }
+
 }
