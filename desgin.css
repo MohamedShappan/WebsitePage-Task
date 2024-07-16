@@ -67,13 +67,25 @@ body {
     text-align: right;
 }
 
-.download-app button {
+.download-btn {
     background-color: white;
     color: #47004C;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 5px;
+}
+.lang-btn {
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    background-color: #ddd;
 }
 
 .hero {
@@ -120,20 +132,26 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-
 .hero-content p {
     margin-bottom: 2rem;
     width: 325px;
 }
 
+.dots-image {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    right: 186px;
+}
+
+.dots-image.arabic {
+    /* Add the style changes for the Arabic version here */
+    left: 150px;
+    right: auto;
+}
 .app-buttons a img {
     width: 150px;
     margin-right: 1rem;
-}
-
-.hero-image img {
-    width: 350px; /* Increased width */
-    position: relative;
 }
 
 .about {
@@ -173,7 +191,24 @@ body {
     margin-bottom: 10px;
     border-radius: 30px;
 }
-
+.Mob1{
+    position: relative;
+    width: 300px;
+    top: 170px;
+}
+.Mob1.arabic{
+    right: 45%;
+    top: -80px;
+}
+.Mob2{
+    position: relative;
+    width: 300px;
+    left: 50%;
+    top: -130px;
+}
+.Mob2.arabic{
+    top: 95px;
+}
 .occasions, .offers, .how-to-order, .features {
     padding: 2rem 0;
 }
@@ -270,17 +305,19 @@ body {
     flex-direction: column;
     gap: 2.3rem;
 }
-
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .faq-item h3 {
     width: 470px;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
-.faq-item img{
-    position: relative;
-    top: -34px;
-    left: 85%;
-    width: 25px;
+.questionstyle{
+    display: flex;
+    flex-direction: row;
 }
 .faq-item p {
     margin-top: -20px;

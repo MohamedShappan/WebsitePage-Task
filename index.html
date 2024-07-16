@@ -6,6 +6,9 @@
     <title>Monasba Tech</title>
     <link rel="stylesheet" href="desgin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .content { direction: ltr; } /* Default to LTR */
+    </style>
 </head>
 <body>
     <header class="header">
@@ -20,19 +23,21 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Shops</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">How To Order</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#" data-en="Categories" data-ar="التصنيفات">Categories</a></li>
+                    <li><a href="#" data-en="Shops" data-ar="المتاجر">Shops</a></li>
+                    <li><a href="#" data-en="Features" data-ar="المميزات">Features</a></li>
+                    <li><a href="#" data-en="How To Order" data-ar="كيفية الطلب">How To Order</a></li>
+                    <li><a href="#" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></li>
                 </ul>
             </nav>
-            <div class="download-app">
-                <button>Download App</button>
+            <div class="download-app-language">
+                <button class="download-btn" data-en="Download App" data-ar="تحميل التطبيق">Download App</button>
+                <button id="en-btn" class="lang-btn">EN</button>
+                <button id="ar-btn" class="lang-btn">AR</button>
             </div>
         </div>
     </header>
-    <main style="margin-bottom: 100px;">
+    <main class="content">
         <section class="hero">
             <div class="oval1"></div>
             <div class="oval1" style="top: -690.46px;right: 1017px;opacity: 10%;"></div>
@@ -44,18 +49,17 @@
             </div>
             <div class="container">
                 <div class="hero-content">
-                    <h1>Organize Your Event With Ease</h1>
-                    <p>"Everything you need for any occasion in one place”</p>
-                    <h5 style="margin-bottom: 20px;">DOWNLOAD OUR APP</h5>
+                    <h1 data-en="Organize Your Event With Ease" data-ar="نظم مناسبتك بسهولة">Organize Your Event With Ease</h1>
+                    <p data-en="Everything you need for any occasion in one place" data-ar="كل ما تحتاجه لأي مناسبة في مكان واحد">Everything you need for any occasion in one place</p>
+                    <h5 style="margin-bottom: 20px;" data-en="DOWNLOAD OUR APP" data-ar="قم بتحميل التطبيق">DOWNLOAD OUR APP</h5>
                     <div class="app-buttons">
                         <a href="#"><img src="appstore.png" alt="App Store"></a>
                         <a href="#"><img src="googleplay.png" alt="Google Play"></a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="dots.png" alt="dots"style="position: absolute;width: 120px;top: 10px;right: 186px;">
-                    <img src="phone.png" alt="App Screenshot">
-                    
+                    <img id="dotsImage" src="dots.png" alt="dots" class="dots-image">
+                    <img src="phone.png" alt="App Screenshot" style="width: 350px;position: relative;">
                 </div>
             </div>
         </section>
@@ -63,11 +67,11 @@
             <div class="container" style="flex-direction: column;">
                 <div style="display: ruby;">
                     <div class="line"></div>
-                    <h2>About Us</h2>
+                    <h2 data-en="About Us" data-ar="معلومات عنا">About Us</h2>
                     <div class="line"></div>
                 </div>
                 <div class="about-content">
-                    <p>MonasabaTech is a technology-driven company specializing in event planning solutions. We understand the challenges of organizing a successful event, and our app is designed to simplify the process, saving you time and effort.</p>
+                    <p data-en="MonasabaTech is a technology-driven company specializing in event planning solutions. We understand the challenges of organizing a successful event, and our app is designed to simplify the process, saving you time and effort." data-ar="MonasabaTech هي شركة تعتمد على التكنولوجيا ومتخصصة في حلول تخطيط الأحداث. نحن ندرك التحديات التي تواجه تنظيم حدث ناجح، وتطبيقنا مصمم لتبسيط العملية، مما يوفر لك الوقت والجهد.">MonasabaTech is a technology-driven company specializing in event planning solutions. We understand the challenges of organizing a successful event, and our app is designed to simplify the process, saving you time and effort.</p>
                     <img src="about us.png" alt="Monasba Tech About Logo">
                 </div>
             </div>
@@ -76,33 +80,33 @@
             <div class="container" style="flex-direction: column;">
                 <div class="section-header">
                     <div class="line"></div>
-                    <h2>Occasions</h2>
+                    <h2 data-en="Occasions" data-ar="المناسبات">Occasions</h2>
                     <div class="line"></div>
                 </div>
                 <div class="grid grid-3">
                     <div class="card">
                         <img src="birthday.png" alt="Birthday">
-                        <p>Birthday</p>
+                        <p data-en="Birthday" data-ar="عيد ميلاد">Birthday</p>
                     </div>
                     <div class="card">
                         <img src="graduation.png" alt="Graduation Party">
-                        <p>Graduation Party</p>
+                        <p data-en="Graduation Party" data-ar="حفلة تخرج">Graduation Party</p>
                     </div>
                     <div class="card">
                         <img src="fetus.png" alt="Determining The Sex Of The Fetus">
-                        <p>Determining The Sex Of The Fetus</p>
+                        <p data-en="Determining The Sex Of The Fetus" data-ar="تحديد جنس الجنين">Determining The Sex Of The Fetus</p>
                     </div>
                     <div class="card">
                         <img src="fathersday.png" alt="Father's Day">
-                        <p>Father's Day</p>
+                        <p data-en="Father's Day" data-ar="عيد الأب">Father's Day</p>
                     </div>
                     <div class="card">
                         <img src="mothersday.png" alt="Mother's Day">
-                        <p>Mother's Day</p>
+                        <p data-en="Mother's Day" data-ar="عيد الأم">Mother's Day</p>
                     </div>
                     <div class="card">
                         <img src="marriage.png" alt="The Marriage Feast">
-                        <p>The Marriage Feast</p>
+                        <p data-en="The Marriage Feast" data-ar="حفلة الزواج">The Marriage Feast</p>
                     </div>
                 </div>
             </div>
@@ -111,183 +115,194 @@
             <div class="container" style="flex-direction: column;">
                 <div class="section-header">
                     <div class="line"></div>
-                    <h2>For each occasion, we offer</h2>
+                    <h2 data-en="For each occasion, we offer" data-ar="لكل مناسبة، نقدم">For each occasion, we offer</h2>
                     <div class="line"></div>
                 </div>
                 <div class="grid grid-4">
                     <div class="card" style="width: 200px;">
                         <img src="cakeshop.png" alt="Cake shops">
-                        <p>Cake shops</p>
+                        <p data-en="Cake shops" data-ar="محلات الكيك">Cake shops</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="balloonshop.png" alt="Balloon shops">
-                        <p>Balloon shops</p>
+                        <p data-en="Balloon shops" data-ar="محلات البالونات">Balloon shops</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="venue.png" alt="Occasion venues">
-                        <p>Occasion venues</p>
+                        <p data-en="Occasion venues" data-ar="أماكن المناسبات">Occasion venues</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="giftshop.png" alt="Gift shops">
-                        <p>Gift shops</p>
+                        <p data-en="Gift shops" data-ar="محلات الهدايا">Gift shops</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="catering.png" alt="Catering teams">
-                        <p>Catering teams</p>
+                        <p data-en="Catering teams" data-ar="فرق التموين">Catering teams</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="buffet.png" alt="Buffet teams">
-                        <p>Buffet teams</p>
+                        <p data-en="Buffet teams" data-ar="فرق البوفيه">Buffet teams</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="photographer.png" alt="Photographers">
-                        <p>Photographers</p>
+                        <p data-en="Photographers" data-ar="المصورين">Photographers</p>
                     </div>
                     <div class="card" style="width: 200px;">
                         <img src="eventplanner.png" alt="Event planners">
-                        <p>Event planners</p>
+                        <p data-en="Event planners" data-ar="منظمي الأحداث">Event planners</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="how-to-order">
+            <div class="container" style="flex-direction: column;">
+                <div class="section-header">
+                    <div class="line"></div>
+                    <h2 data-en="How To Order?" data-ar="كيف تطلب؟">How To Order?</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid grid-4">
+                    <div class="card">
+                        <img src="number1.png" alt="01" class="number-image"> 
+                        <img src="step1.png" alt="Choose your Occasion">
+                        <h4 data-en="Browse" data-ar="تصفح">Browse</h4>
+                        <p data-en="Choose the items for your occasion" data-ar="اختر العناصر لمناسبتك">Choose the items for your occasion</p>
+                    </div>
+                    <div class="card">
+                          <img src="number2.png" alt="02" class="number-image">
+                          <img src="step2.png" alt="Choose what to order">
+                        <h4 data-en="Order" data-ar="اطلب">Order</h4>
+                        <p data-en="Add items to your cart and place an order" data-ar="أضف العناصر إلى عربة التسوق الخاصة بك وقدم طلبًا">Add items to your cart and place an order</p>
+                    </div>
+                    <div class="card">
+                        <img src="number3.png" alt="03" class="number-image">
+                        <img src="step3.png" alt="Book and Confirm">
+                        <h4 data-en="Pay" data-ar="ادفع">Pay</h4>
+                        <p data-en="Make a payment through our secure platform" data-ar="قم بالدفع من خلال منصتنا الآمنة">Make a payment through our secure platform</p>
+                    </div>
+                    <div class="card">
+                        <img src="number4.png" alt="04" class="number-image">
+                        <img src="step4.png" alt="Manage Your Occasion">
+                        <h4 data-en="Enjoy" data-ar="استمتع">Enjoy</h4>
+                        <p data-en="Receive your items and enjoy your occasion" data-ar="استلم أغراضك واستمتع بمناسبتك">Receive your items and enjoy your occasion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
     <div class="container" style="flex-direction: column;">
         <div class="section-header">
             <div class="line"></div>
-            <h2>How To Order?</h2>
+            <h2 data-en="Our Features" data-ar="مميزاتنا">Our Features</h2>
             <div class="line"></div>
         </div>
-        <div class="grid grid-4">
+        <div class="grid grid-3">
             <div class="card">
-                <img src="number1.png" alt="01" class="number-image">
-                <img src="step1.png" alt="Choose your Occasion">
-                <p>Choose your Occasion</p>
+                <img src="userfriendly.png" alt="User-Friendly Interface">
+                <p data-en="User-Friendly Interface" data-ar="واجهة سهلة الاستخدام">User-Friendly Interface</p>
+                <p data-en="The app is designed with a clean and intuitive interface, making it easy for users of all ages to navigate and find what they need quickly." data-ar="تم تصميم التطبيق بواجهة نظيفة وبديهية، مما يجعل من السهل على المستخدمين من جميع الأعمار التنقل والعثور على ما يحتاجون إليه بسرعة.">The app is designed with a clean and intuitive interface, making it easy for users of all ages to navigate and find what they need quickly.</p>
             </div>
             <div class="card">
-                <img src="number2.png" alt="02" class="number-image">
-                <img src="step2.png" alt="Choose what to order">
-                <p>Choose what to order</p>
+                <img src="eventsolutions.png" alt="Comprehensive Event Solutions">
+                <p data-en="Comprehensive Event Solutions" data-ar="حلول شاملة للأحداث">Comprehensive Event Solutions</p>
+                <p data-en="From cakes and balloons to photographers and event planners, the app offers a complete range of services for various types of events, ensuring all your needs are met in one place." data-ar="من الكعك والبالونات إلى المصورين ومنظمي الأحداث، يقدم التطبيق مجموعة كاملة من الخدمات لأنواع مختلفة من الأحداث، مما يضمن تلبية جميع احتياجاتك في مكان واحد.">From cakes and balloons to photographers and event planners, the app offers a complete range of services for various types of events, ensuring all your needs are met in one place.</p>
             </div>
             <div class="card">
-                <img src="number3.png" alt="03" class="number-image">
-                <img src="step3.png" alt="Book and Confirm">
-                <p>Book and Confirm</p>
+                <img src="customizable.png" alt="Customizable Options">
+                <p data-en="Customizable Options" data-ar="خيارات قابلة للتخصيص">Customizable Options</p>
+                <p data-en="Users can personalize their event plans by selecting from a variety of customizable options, including cake designs, balloon decorations, venue setups, and more." data-ar="يمكن للمستخدمين تخصيص خطط مناسباتهم عن طريق الاختيار من بين مجموعة متنوعة من الخيارات القابلة للتخصيص، بما في ذلك تصميمات الكعك وتزيين البالونات وإعدادات المكان والمزيد.">Users can personalize their event plans by selecting from a variety of customizable options, including cake designs, balloon decorations, venue setups, and more.</p>
             </div>
             <div class="card">
-                <img src="number4.png" alt="04" class="number-image">
-                <img src="step4.png" alt="Manage Your Occasion">
-                <p>Manage Your Occasion</p>
+                <img src="verified.png" alt="Verified Service Providers">
+                <p data-en="Verified Service Providers" data-ar="مزودي الخدمة المعتمدين">Verified Service Providers</p>
+                <p data-en="All service providers listed in the app are verified and reviewed, ensuring that users receive high-quality and reliable services for their events." data-ar="جميع مزودي الخدمة المدرجين في التطبيق معتمدون ومراجعون، مما يضمن حصول المستخدمين على خدمات عالية الجودة وموثوقة لمناسباتهم.">All service providers listed in the app are verified and reviewed, ensuring that users receive high-quality and reliable services for their events.</p>
+            </div>
+            <div class="card">
+                <img src="booking.png" alt="Seamless Booking Process">
+                <p data-en="Seamless Booking Process" data-ar="عملية حجز سلسة">Seamless Booking Process</p>
+                <p data-en="The app features an easy-to-use booking system where users can browse, select, and book services effortlessly, with clear pricing and availability information." data-ar="يتميز التطبيق بنظام حجز سهل الاستخدام حيث يمكن للمستخدمين التصفح والاختيار وحجز الخدمات بسهولة، مع معلومات واضحة عن الأسعار والتوافر.">The app features an easy-to-use booking system where users can browse, select, and book services effortlessly, with clear pricing and availability information.</p>
+            </div>
+            <div class="card">
+                <img src="management.png" alt="Event Management Tools">
+                <p data-en="Event Management Tools" data-ar="أدوات إدارة الأحداث">Event Management Tools</p>
+                <p data-en="The app includes tools to help users manage their events, such as booking tracking, payment processing, and communication with service providers, ensuring a smooth and organized planning experience." data-ar="يتضمن التطبيق أدوات لمساعدة المستخدمين في إدارة أحداثهم، مثل تتبع الحجوزات ومعالجة المدفوعات والتواصل مع مزودي الخدمة، مما يضمن تجربة تخطيط سلسة ومنظمة.">The app includes tools to help users manage their events, such as booking tracking, payment processing, and communication with service providers, ensuring a smooth and organized planning experience.</p>
             </div>
         </div>
     </div>
 </section>
-
-<section class="features">
-            <div class="container" style="flex-direction: column;">
-                <div class="section-header">
-                    <div class="line"></div>
-                    <h2>Our Features</h2>
-                    <div class="line"></div>
-                </div>
-                <div class="grid grid-3">
-                    <div class="card">
-                        <img src="userfriendly.png" alt="User-Friendly Interface">
-                        <p>User-Friendly Interface</p>
-                        <p>The app is designed with a clean and intuitive interface, making it easy for users of all ages to navigate and find what they need quickly.</p>
-                    </div>
-                    <div class="card">
-                        <img src="eventsolutions.png" alt="Comprehensive Event Solutions">
-                        <p>Comprehensive Event Solutions</p>
-                        <p>From cakes and balloons to photographers and event planners, the app offers a complete range of services for various types of events, ensuring all your needs are met in one place.</p>
-                    </div>
-                    <div class="card">
-                        <img src="customizable.png" alt="Customizable Options">
-                        <p>Customizable Options</p>
-                        <p>Users can personalize their event plans by selecting from a variety of customizable options, including cake designs, balloon decorations, venue setups, and more.</p>
-                    </div>
-                    <div class="card">
-                        <img src="verified.png" alt="Verified Service Providers">
-                        <p>Verified Service Providers</p>
-                        <p>All service providers listed in the app are verified and reviewed, ensuring that users receive high-quality and reliable services for their events.</p>
-                    </div>
-                    <div class="card">
-                        <img src="booking.png" alt="Seamless Booking Process">
-                        <p>Seamless Booking Process</p>
-                        <p>The app features an easy-to-use booking system where users can browse, select, and book services effortlessly, with clear pricing and availability information.</p>
-                    </div>
-                    <div class="card">
-                        <img src="management.png" alt="Event Management Tools">
-                        <p>Event Management Tools</p>
-                        <p>The app includes tools to help users manage their events, such as booking tracking, payment processing, and communication with service providers, ensuring a smooth and organized planning experience.</p>
-                    </div>
-                </div>
+<section class="hero" style="height: 600px; margin-top: 100px;">
+    <div class="container">
+        <div class="hero-content">
+            <h1 data-en="Start Organizing Your Event Now" data-ar="ابدأ بتنظيم مناسبتك الآن">Start Organizing Your Event Now</h1>
+            <p data-en="Download the app and enjoy organizing your event with ease" data-ar="حمل التطبيق واستمتع بتنظيم مناسبتك بسهولة">Download the app and enjoy organizing your event with ease</p>
+            <h5 style="margin-bottom: 20px;" data-en="Get the App" data-ar="احصل على التطبيق">Get the App</h5>
+            <div class="app-buttons">
+                <a href="#"><img src="appstore.png" alt="App Store"></a>
+                <a href="#"><img src="googleplay.png" alt="Google Play"></a>
             </div>
-        </section>
-        <section class="hero" style="height: 600px;margin-top: 100px;">
-        <div class="container">
-            <div class="hero-content">
-                    <h1>Start Organizing Your Event Now</h1>
-                    <p>Download the app and enjoy organizing your event with ease</p>
-                    <h5 style="margin-bottom: 20px;">Get the App</h5>
-                    <div class="app-buttons">
-                        <a href="#"><img src="appstore.png" alt="App Store"></a>
-                        <a href="#"><img src="googleplay.png" alt="Google Play"></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="phone.png" alt="App Screenshot1" style="position: absolute;left: 51%;top: 20px;">
-                    <img src="phone.png" alt="App Screenshot2" style="position: absolute;left: 70%;top: 110px;">
-                </div>
         </div>
-    </section>
-        <section class="faq">
-            <div class="container" style="flex-direction: column;">
-                <div class="section-header">
-                    <div class="line"></div>
-                    <h2>FAQ</h2>
-                    <div class="line"></div>
-                </div>
-                <div class="faq-content">
-                    <div class="faq-questions">
-                        <div class="faq-item">
-                            <h3>Can I customize the services for my event?</h3>
-                            <img src="minus.png" alt="buttonpng">
-                            <p>Absolutely! The app offers a range of customizable options for each category. You can choose different designs, themes, and setups to personalize your event according to your preferences.</p>
-                        </div>
-                        <div class="faq-item">
-                            <h3>How do I book services for my event through the app?</h3>
-                            <img src="plus.png" alt="buttonpng" style="top: -44px;">
-                        </div>
-                        <div class="faq-item">
-                            <h3>Are the service providers listed on the app verified?</h3>
-                            <img src="plus.png" alt="buttonpng">
-                        </div>
-                        <div class="faq-item">
-                            <h3>How can I track my bookings and manage my event?</h3>
-                            <img src="plus.png" alt="buttonpng">
-                            
-                        </div>
-                        <div class="faq-item">
-                            <h3>What types of events can I plan using the app?</h3>
-                            <img src="plus.png" alt="buttonpng">
-                        </div>
+        <div class="hero-image">
+            <img src="phone.png" alt="App Screenshot1" class="Mob1" id="Mobile1">
+            <img src="phone.png" alt="App Screenshot2" class="Mob2" id="Mobile2">
+        </div>
+    </div>
+</section>
+<section class="faq"     style="margin-bottom: 80px;">
+    <div class="container" style="flex-direction: column;">
+        <div class="section-header">
+            <div class="line"></div>
+            <h2 data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</h2>
+            <div class="line"></div>
+        </div>
+        <div class="faq-content">
+            <div class="faq-questions">
+                <div class="faq-item">
+                    <div class="questionstyle">
+                        <h3 data-en="Can I customize the services for my event?" data-ar="هل يمكنني تخصيص الخدمات لمناسبتي؟">Can I customize the services for my event?</h3>
+                        <img src="minus.png" alt="buttonpng" style="width: 26px; height: 26px;">
                     </div>
-                    <div class="faq-image">
-                        <img src="faqphone.png" alt="App Screenshot">
-                        <img src="shadow.png" alt="shadow" style="position: absolute;">
+                    <p data-en="Absolutely! The app offers a range of customizable options for each category. You can choose different designs, themes, and setups to personalize your event according to your preferences." data-ar="بالتأكيد! يوفر التطبيق مجموعة من الخيارات القابلة للتخصيص لكل فئة. يمكنك اختيار تصميمات وموضوعات وإعدادات مختلفة لتخصيص مناسبتك وفقًا لتفضيلاتك.">Absolutely! The app offers a range of customizable options for each category. You can choose different designs, themes, and setups to personalize your event according to your preferences.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="questionstyle">
+                        <h3 data-en="How do I book services for my event through the app?" data-ar="كيف أحجز الخدمات لمناسبتي من خلال التطبيق؟">How do I book services for my event through the app?</h3>
+                        <img src="plus.png" alt="buttonpng" style="width: 26px; height: 26px;">
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="questionstyle">
+                        <h3 data-en="Are the service providers listed on the app verified?" data-ar="هل مزودي الخدمة المدرجين في التطبيق معتمدون؟">Are the service providers listed on the app verified?</h3>
+                        <img src="plus.png" alt="buttonpng" style="width: 26px; height: 26px;">
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="questionstyle">
+                        <h3 data-en="How can I track my bookings and manage my event?" data-ar="كيف يمكنني تتبع حجوزاتي وإدارة مناسباتي؟">How can I track my bookings and manage my event?</h3>
+                        <img src="plus.png" alt="buttonpng" style="width: 26px; height: 26px;">
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="questionstyle">
+                        <h3 data-en="What types of events can I plan using the app?" data-ar="ما هي أنواع المناسبات التي يمكنني تخطيطها باستخدام التطبيق؟">What types of events can I plan using the app?</h3>
+                        <img src="plus.png" alt="buttonpng" style="width: 26px; height: 26px;">
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
+            <div class="faq-image">
+                <img src="faqphone.png" alt="App Screenshot">
+                <img src="shadow.png" alt="shadow" style="position: absolute;">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
     <div class="footer-container">
         <div class="footer-background"></div> <!-- New background div -->
         <div class="footer-content">
             <div class="footer-card">
-                <div style="margin-right: 88px;margin-bottom: 32px;">
-                    <h2>Plan Your Perfect Occasion with MonasabaTech</h2>
-                    <p>Download Monasaba Tech Now and Make Your Celebrations Unforgettable!</p>
+                <div style="margin-right: 88px; margin-bottom: 32px;">
+                    <h2 data-en="Plan Your Perfect Occasion with MonasabaTech" data-ar="خطط لمناسبتك المثالية مع MonasabaTech">Plan Your Perfect Occasion with MonasabaTech</h2>
+                    <p data-en="Download MonasabaTech Now and Make Your Celebrations Unforgettable!" data-ar="حمل MonasabaTech الآن واجعل احتفالاتك لا تُنسى!">Download MonasabaTech Now and Make Your Celebrations Unforgettable!</p>
                 </div>
                 <div class="app-buttons">
                     <a href="#"><img src="appstore.png" alt="App Store"></a>
@@ -295,16 +310,16 @@
                 </div>
             </div>
             <div class="footer-links">
-                <a href="#">Features</a>
-                <a href="#">Services</a>
-                <a href="#">FAQ</a>
+                <a href="#" data-en="Features" data-ar="الميزات">Features</a>
+                <a href="#" data-en="Services" data-ar="الخدمات">Services</a>
+                <a href="#" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024. All rights reserved MonasabaTech.</p>
+            <p data-en="&copy; 2024. All rights reserved MonasabaTech." data-ar="&copy; 2024. جميع الحقوق محفوظة لـ MonasabaTech.">&copy; 2024. All rights reserved MonasabaTech.</p>
             <div class="footer-bottom-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+                <a href="#" data-en="Terms & Conditions" data-ar="الشروط والأحكام">Terms & Conditions</a>
             </div>
             <div class="social-media-icons">
                 <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
@@ -315,5 +330,33 @@
     </div>
 </footer>
 
+    </main>
+
+    <script>
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const elementsToTranslate = document.querySelectorAll('[data-en][data-ar]');
+        const content = document.querySelector('.content');
+        const dotsImage = document.getElementById('dotsImage');
+        const Mob1_Image = document.getElementById('Mobile1');
+        const Mob2_Image = document.getElementById('Mobile2');
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.id === 'en-btn' ? 'en' : 'ar';
+                elementsToTranslate.forEach(el => {
+                    el.textContent = el.getAttribute(`data-${lang}`);
+                });
+                content.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+                if (lang === 'ar') {
+                    dotsImage.classList.add('arabic');
+                    Mob1_Image.classList.add('arabic');
+                    Mob2_Image.classList.add('arabic');
+                } else {
+                    dotsImage.classList.remove('arabic');
+                    Mob1_Image.classList.remove('arabic');
+                    Mob2_Image.classList.remove('arabic');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
