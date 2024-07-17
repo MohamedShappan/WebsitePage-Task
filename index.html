@@ -90,12 +90,12 @@
             </div>
         </section>
         <section class="occasions">
-            <div class="container" style="flex-direction: column;">
-                <div class="section-header">
+            <div class="section-header">
                     <div class="line"></div>
                     <h2 data-en="Occasions" data-ar="المناسبات">Occasions</h2>
                     <div class="line"></div>
                 </div>
+            <div class="container">
                 <div class="grid grid-3">
                     <div class="card">
                         <img src="birthday.png" alt="Birthday">
@@ -125,12 +125,12 @@
             </div>
         </section>
         <section class="offers">
-            <div class="container" style="flex-direction: column;">
-                <div class="section-header">
+            <div class="section-header">
                     <div class="line"></div>
                     <h2 data-en="For each occasion, we offer" data-ar="لكل مناسبة، نقدم">For each occasion, we offer</h2>
                     <div class="line"></div>
                 </div>
+            <div class="container">
                 <div class="grid grid-4">
                     <div class="card">
                         <img src="cakeshop.png" alt="Cake shops">
@@ -168,12 +168,12 @@
             </div>
         </section>
         <section class="how-to-order">
-            <div class="container" style="flex-direction: column;">
-                <div class="section-header">
+            <div class="section-header">
                     <div class="line"></div>
                     <h2 data-en="How To Order?" data-ar="كيف تطلب؟">How To Order?</h2>
                     <div class="line"></div>
                 </div>
+            <div class="container">
                 <div class="grid grid-4">
                     <div class="card">
                         <img src="number1.png" alt="01" class="number-image"> 
@@ -202,13 +202,13 @@
                 </div>
             </div>
         </section>
-        <section class="features">
-    <div class="container" style="flex-direction: column;">
+    <section class="features">
         <div class="section-header">
-            <div class="line"></div>
-            <h2 data-en="Our Features" data-ar="مميزاتنا">Our Features</h2>
-            <div class="line"></div>
+        <div class="line"></div>
+        <h2 data-en="Our Features" data-ar="مميزاتنا">Our Features</h2>
+        <div class="line"></div>
         </div>
+    <div class="container">
         <div class="grid grid-3">
             <div class="card">
                 <img src="userfriendly.png" alt="User-Friendly Interface">
@@ -243,7 +243,7 @@
         </div>
     </div>
 </section>
-<section class="hero" style="height: fit-content; margin-top: 100px;">
+<section class="viewer">
     <div class="container">
         <div class="hero-content">
             <h1 data-en="Start Organizing Your Event Now" data-ar="ابدأ بتنظيم مناسبتك الآن">Start Organizing Your Event Now</h1>
@@ -260,7 +260,7 @@
         </div>
     </div>
 </section>
-<section class="faq"     style="margin-bottom: 80px;">
+<section class="faq"style="margin-bottom: 80px;">
     <div class="container" style="flex-direction: column;">
         <div class="section-header">
             <div class="line"></div>
@@ -352,6 +352,7 @@
         const dotsImage = document.getElementById('dotsImage');
         const Mob1_Image = document.getElementById('Mobile1');
         const Mob2_Image = document.getElementById('Mobile2');
+        const viewer = document.getElementById('Mobile2');
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const lang = btn.id === 'en-btn' ? 'en' : 'ar';
