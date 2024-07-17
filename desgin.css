@@ -370,6 +370,7 @@ body {
 .faq {
     padding: 2rem 0;
     background-color: white;
+    margin-bottom: 80px;
 }
 
 .faq .container {
@@ -582,7 +583,7 @@ footer {
 
 @media (max-width: 900px) {
     .viewer{
-        height: 290px;
+        height: 510px;
     }
     .nav,
     .buttons  {
@@ -594,6 +595,18 @@ footer {
     .header .toggle-btn {
         display: block;
         margin-left: 200px;
+        font-size: 30px;
+    }
+    .about .container{
+        flex-direction: row;
+    }
+    .hero{
+        margin-bottom: 145px;
+    }
+    .hero .container{
+        height: 355px;
+        padding-top: 103px;
+        flex-direction: column;
     }
     .lang-btn{
        background-color: #47004C;
@@ -621,8 +634,21 @@ footer {
         grid-template-columns: repeat(8, 1fr);
         overflow-y: auto;
     }
+    .hero-content{
+        max-width: 78vw;
+    }
     .phone{
-        width: 200px
+        width: 200px;
+        left:30%;
+        top: 7%;
+    }
+    .phone.arabic{
+        right: 27%;
+        top: 14%;
+    }
+    .hero-image .dots-image.arabic{
+        left: 33%;
+        top: 62%;
     }
     .card p{
         font-size: 23px;
@@ -645,21 +671,32 @@ footer {
         height: 249px;
     }
     .hero-image .dots-image{
-        display: none;
+        width: 75px;
+        top: 69%;
+        left: 50%;
     }
     .about-content {
-        flex-direction: column;
+        flex-direction: row;
+        display: inline-flex;
+    }
+    .about-content p{
+        text-align: left;
+    }
+    .about-content img{
+        content: url("aboutlogo.png");
     }
     .Mob2{
         top: -85px;
     }
     .Mob1.arabic{
-        right: 35%;
-        top: -15px;
+        width: 41vw;
+        right: 41%;
+        top: 53%;
     }
     .Mob2.arabic{
-        top: -45%;
-        right: -20px;
+        width: 41vw;
+        top: 47%;
+        right: 40px;
     }
     .faq-image{
         display: none;
@@ -686,14 +723,20 @@ footer {
         right: 40%;
     }
     .hero-content h1{
-        font-size: x-large;
+        font-size: xx-large;
     }
     .hero-content p{
-        font-size: 14px;
+        font-size: 20px;
+        margin-bottom: 5px;
+        width: 87vw;
     }
     .hero-content h5{
         font-size: 15;
+        margin-bottom: 5px;
         margin-bottom: 1rem;
+    }
+    .app-buttons a img{
+        width: 35vw;
     }
     .wave{
         bottom: -12px;;
@@ -711,7 +754,7 @@ footer {
         font-size:  20px; ;
     }
     .about-content img{
-        width: 30vw;
+        width: 37vw;
     }
     .occasions .container .grid-3 .card img{
         max-width: 35vw;
@@ -732,11 +775,74 @@ footer {
     .footer-background{
         bottom: 11vw;
     }
+    .faq{
+        margin-bottom: 160px;
+    }
     .footer-card{
-        bottom: 7vw;
+        bottom: 30vw;
+        flex-direction: column;
+        height: 65vw;
+        width: fit-content;
+        gap: 29px;
     }
     .footer-card div{
+        padding-left: 20px;
+        flex-direction: column;
         text-align: center;
     }
+    .footer-card div h2{
+        font-size: medium;
+        width: 209px;
+        text-align: left;
+    }
+    .footer-card div p{
+        text-align: left;
+        font-size: 12px;
+        width: 90%;
+    }
+    .footer-links{
+        margin-top:-80px;
+    }
+    .footer-links a{
+        font-size: 3vw;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        gap: 10px;
 
+    }
+    .footer-bottom p{
+        font-size: 2vw;
+        position: relative;
+        top: 17px;
+        left: 11px;
+    }
+    .footer-bottom-links{
+        position: relative;
+        gap: 12px;
+        bottom: 25px;
+        left: 8px;
+    }
+    .footer-bottom-links a {
+        font-size: 2vw;
+    }
+    .social-media-icons{
+        gap: 20px;
+    }
+    .social-media-icons img{
+        width: 4vw;
+        height: 4vw;
+    }
+    .Mob1{
+        position: absolute;
+        width: 36vw;
+        top: 60%;
+        left: 50%;
+    }
+    .Mob2 {
+        position: absolute;
+        width: 36vw;
+        top: 58%;
+        left: 22%;
+    }
 }

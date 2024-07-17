@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 data-en="Organize Your Event With Ease" data-ar="نظم مناسبتك بسهولة">Organize Your Event With Ease</h1>
-                    <p data-en="Everything you need for any occasion in one place" data-ar="كل ما تحتاجه لأي مناسبة في مكان واحد">Everything you need for any occasion in one place</p>
+                    <p data-en='"Everything you need for any occasion in one place"' data-ar="كل ما تحتاجه لأي مناسبة في مكان واحد">Everything you need for any occasion in one place</p>
                     <h5 style="margin-bottom: 20px;" data-en="DOWNLOAD OUR APP" data-ar="قم بتحميل التطبيق">DOWNLOAD OUR APP</h5>
                     <div class="app-buttons">
                         <a href="#"><img src="appstore.png" alt="App Store"></a>
@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="phone.png" alt="App Screenshot" class="phone">
-                    <img id="dotsImage" src="dots.png" alt="dots" class="dots-image">
+                    <img src="phone.png" alt="App Screenshot" class="phone" id="pho1">
+                    <img id="dotsImage" src="dots.png" alt="dots" class="dots-image" id="dot">
                 </div>
             </div>
             <div class="wave">
@@ -260,7 +260,7 @@
         </div>
     </div>
 </section>
-<section class="faq"style="margin-bottom: 80px;">
+<section class="faq">
     <div class="container" style="flex-direction: column;">
         <div class="section-header">
             <div class="line"></div>
@@ -352,7 +352,7 @@
         const dotsImage = document.getElementById('dotsImage');
         const Mob1_Image = document.getElementById('Mobile1');
         const Mob2_Image = document.getElementById('Mobile2');
-        const viewer = document.getElementById('Mobile2');
+        const pho1 = document.getElementById('pho1');
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const lang = btn.id === 'en-btn' ? 'en' : 'ar';
@@ -362,12 +362,15 @@
                 content.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
                 if (lang === 'ar') {
                     dotsImage.classList.add('arabic');
+                    pho1.classList.add('arabic');
                     Mob1_Image.classList.add('arabic');
                     Mob2_Image.classList.add('arabic');
+                    
                 } else {
                     dotsImage.classList.remove('arabic');
                     Mob1_Image.classList.remove('arabic');
                     Mob2_Image.classList.remove('arabic');
+                    pho1.classList.remove('arabic');
                 }
             });
         });
