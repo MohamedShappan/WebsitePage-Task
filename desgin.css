@@ -97,7 +97,7 @@ body {
 .sidebar {
     overflow-y: auto;
     position: fixed;
-    right: 3;
+    right: 3px;
     top: 0;
     height: 50%;
     width: 200px;
