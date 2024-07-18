@@ -290,7 +290,10 @@ body {
 }
 
 .occasions, .offers, .how-to-order, .features {
+    display: flex;
     padding: 2rem 0;
+    gap: 38px;
+    flex-direction: column;
 }
 
 .section-header {
@@ -496,10 +499,6 @@ footer {
     font-size: 1vw;
 }
 
-.app-buttons {
-    display: flex;
-    margin-left: 2vw;
-}
 
 .app-buttons a {
     margin: 0 1vw;
@@ -564,7 +563,16 @@ footer {
     width: 2vw;
     height: 2vw;
 }
-
+.hero .app-buttons,.viewer .app-buttons,.footer-card .app-buttons {
+    display: flex;
+    margin-left: 2vw;
+    flex-direction: row;
+}
+.hero .app-buttons a img,
+.viewer .app-buttons a img,.footer-card .app-buttons a img{
+ width: 221.17px;
+ height: 69.72px;
+}
 @media (max-width: 1024px) {
     .nav ul {
         margin-right: 5%;
