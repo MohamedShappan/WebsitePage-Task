@@ -961,7 +961,7 @@ footer {
         width: 200px;
         height: 324px;
         top: 34px;
-        left: -25.25px;
+        left:-50.25px;
     }
     .viewer .container{
         flex-direction: column;
@@ -997,7 +997,7 @@ footer {
     .viewer .hero-image{
         display: flex;
         flex-direction: row;
-        width: 367.5px;
+        width: 338.5px;
         height: 343.58px;
     }
     .footer-card .app-buttons{
@@ -1037,7 +1037,7 @@ footer {
         top: 512%;
     }
     .container{
-        width: 100%;
+        width: 90%;
     }
     .container.arabic{
         margin: 0 auto;
@@ -1048,5 +1048,10 @@ footer {
     }
     .footer-background.arabic{
         display: none;
+    }
+}
+@media(max-width:363px){
+    body{
+        width: 104%;
     }
 }
