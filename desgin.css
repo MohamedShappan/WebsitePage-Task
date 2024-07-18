@@ -1037,11 +1037,16 @@ footer {
         top: 512%;
     }
     .container{
-        width:90%;
         margin: 0;
     }
     .container.arabic{
         margin: 0 auto;
         width: 90%;
+    }
+    .footer-background{
+        display: none;
+    }
+    .footer-background.arabic{
+        display: none;
     }
 }
