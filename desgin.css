@@ -221,11 +221,6 @@ body {
     right: auto;
 }
 
-.app-buttons a img {
-    width: 15vw;
-    margin-right: 1rem;
-}
-
 .about {
     background-color: white;
     padding: 2rem 0;
@@ -272,7 +267,6 @@ body {
     background-color: #47004C;
     color: white;
     height: 603px;
-    margin-top: 100px;
 }
 .Mob1 {
     position: relative;
@@ -303,8 +297,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 15px;
 }
 
 .section-header h2 {
@@ -376,7 +369,6 @@ body {
 .faq .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .faq-content {
@@ -600,7 +592,7 @@ footer {
 
 @media (max-width: 900px) {
     .viewer{
-        height: 660px;
+        height: 656.41px;
     }
     .nav,
     .buttons  {
@@ -610,15 +602,17 @@ footer {
         display: none;
     }
     .header .toggle-btn {
+        padding-top: 14px;
         display: block;
-        margin-left: 165px;
-        font-size: 30px;
+        width: 93.5px;
+            height: 56px;
     }
     .about .container{
         flex-direction: row;
+        gap: 24px;
     }
     .hero{
-        margin-bottom: 145px;
+        margin-bottom: 150px;
     }
     .hero .container{
         height: 355px;
@@ -643,12 +637,15 @@ footer {
     }
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
+        gap:16px
     }
     .offers .card{
-        width: 171px;
+        width: 160px;
+        height: 108.4px;
     }
     .hero-content{
         max-width: 78vw;
@@ -664,33 +661,46 @@ footer {
     }
     .viewer .hero-content h1{
         margin-top: 0;
+        width: 343px;
+        height: 104px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 52px;
     }
     .hero-image .dots-image.arabic{
         left: 33%;
-        top: 62%;
+        top: 70%;
     }
-    .card p{
-        font-size: 23px;
+    .offer .card p{
+        font-size: 10px;
+        font: bold;
     }
-    .card h4{
-        font-size: 30px;
+    .offer .card img{
+        width: 82px;
+        height: 48px;
+        border-radius: 6px;
     }
-    .card img{
-        max-width: 22vw;
+    .offer .card{
+        width: 160px;
+        height: 108px;
     }
-    .card{
-        width: fit-content;
+    .occasions .card {
+        width: 160px;
+        height: 108.4px;
     }
     .number-image{
-        width: 30px;
+        left: 0.6px;
+        top: 0.14px;
+        width: 32px;
+        height: 34px;
     }
     .how-to-order .card{
-        width: 171px;
-        height: 249px;
+        width: 160px;
+        height: 192px;
     }
     .hero-image .dots-image{
         width: 75px;
-        top: 69%;
+        top: 70%;
         left: 50%;
     }
     .about-content {
@@ -708,13 +718,13 @@ footer {
     }
     .Mob1.arabic{
         width: 60vw;
-        right: 40%;
-        top: 45%;
+        right: -5%;
+        top: 5%;
     }
     .Mob2.arabic{
         width: 60vw;
-        top: 40%;
-        right: -7px;
+        top: 9%;
+        right: -70px;
     }
     .faq-image{
         display: none;
@@ -723,121 +733,171 @@ footer {
         bottom: 6vw;
     }
     .footer-card{
-        bottom: 13vw;
+        bottom: 15vw;
     }
     .footer-lang{
         color: white;
         text-decoration: none;
-        margin: 0.5vw 0;
+        margin: 0 0 3.5vw 0;
     }
 }
 @media (max-width: 700px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
     .line{
         position: relative;
         top: 5px;
+        width: 30px;
+    }
+    .oval1{
+        top: -46vw;
+        right: 79vw;
     }
     .oval2{
-        top: -60%;
-        right: 60%;
+        display: none;
     }
     .oval3{
         width: 700px;
         height: 700px;
-        top: -133%;
-        right: 40%;
-    }
-    .hero-content h1{
-        font-size: xx-large;
-        margin-top: 95px;
+        top: -87%;
+        right: 58%;
     }
     .hero-content p{
-        font-size: 20px;
-        margin-bottom: 5px;
-        width: 87vw;
+        width: 343px;
+        height: 56px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
     }
     .hero-content h5{
-        font-size: 15;
-        margin-bottom: 5px;
-        margin-bottom: 1rem;
+        width: 120px;
+        height: 28px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
     }
-    .app-buttons a img{
-        width: 35vw;
+    .footer-card.app-buttons a img{
+        width: 188.46px;
+        height: 61.54px;
+
     }
     .wave{
-        bottom: -12px;;
+        bottom: -15px;
     }
     .phone {
         width: 205px;
     }
     .questionstyle h3{
-        font-size: 17px;
+        font-size: 14px;
+        width: 302px;
+        height: 26px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    .occasions,.offers,.how-to-order,.features{
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     .faq-item p{
-        font-size: 11px;
+        font-size: 12px;
+        width: 328px;
+        height: 60px;
+        font-weight: 400;
+        line-height: 14.52px;
     }
     .about h2,.occasions h2,.faq h2,.offers h2,.features h2 ,.how-to-order h2{
         font-size:  20px; ;
     }
     .about-content img{
-        width: 37vw;
+        width: 91px;
     }
     .occasions .container .grid-3 .card img{
-        max-width: 35vw;
+        width: 55.2px;
+        height: 39.6px;
     }
     .features .card p:first-of-type {
-        font-size:16px;
+        font-size:14px;
+        width: 158px;
     }
     .features .grid-3 .card {
-        width: 181px;
-        height: 250px;
+        width: 160px;
+        height: 188px;
         padding: 0;
+        border-radius: 8px;
+        gap: 18px;
     }
     .features .grid-3 .card img{
-        width: 24px;
+        width: 20px;
         height: 24px;
     }
     .features .card p{
-        font-size: 12px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+        width: 160px;
     }
-    .card p{ 
-        font-size: 21px;
-    }
-    .footer-container{
-        margin-top: -48px;
+    .occasions .card p,.offers .card p{ 
+        font-size: 11px;
     }
     .footer-background{
-        bottom: 11vw;
+            position: absolute;
+            top: 518%;
+            height: 16%;
     }
     .faq{
-        margin-bottom: 160px;
+        height: 420px;
+        margin-bottom: 153px;
     }
     .footer-card{
-        bottom: 30vw;
         flex-direction: column;
-        height: 65vw;
-        width: fit-content;
-        gap: 29px;
+        width: 328.85px;
+        height:387.85px;
+        padding: 46.15px 16px 46.15px 16px;
+        gap: 40px;;
+        border-radius: 30.77px;
+        opacity: 0px;
+
     }
-    .footer-card div{
+    .card-words{
+        display: flex;
+        gap: 60px;
         padding-left: 20px;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     .footer-card div h2{
-        font-size: medium;
-        width: 209px;
-        text-align: left;
+        width: 296.85px;
+        height: 47px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
     }
     .footer-card div p{
         text-align: left;
-        font-size: 12px;
-        width: 90%;
+        width: 296.85px;
+        height: 47px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23.08px;
     }
     .footer-links{
-        margin-top:-80px;
+        width: 328.85px;
+        height: 63.23px;
+        gap: 38.4px;
+        justify-content: center;
+
     }
     .footer-links a{
-        font-size: 3vw;
+        font-size: 15.38px;
+        font-weight: 600;
+        line-height: 19.23px;
+
     }
     .footer-bottom{
         flex-direction: column;
@@ -845,9 +905,12 @@ footer {
 
     }
     .footer-bottom p{
-        font-size: 2vw;
+        font-size: 13.46px;
+        font-weight: 400;
+        line-height: 19.23px;
+        height: 20px;
         position: relative;
-        top: 17px;
+        top: 28px;
         left: 11px;
     }
     .footer-bottom-links{
@@ -857,25 +920,103 @@ footer {
         left: 8px;
     }
     .footer-bottom-links a {
-        font-size: 2vw;
+        font-size: 13.46px;
+        font-weight: 400;
+        line-height: 19.23px;
+        height: 20px;
     }
     .social-media-icons{
-        gap: 20px;
+        gap: 23px;
     }
     .social-media-icons img{
-        width: 4vw;
-        height: 4vw;
+        width: 38.46px;
+        height: 38.46px;
+        border-radius: 46.15px;
     }
     .Mob1{
-        position: absolute;
-        width: 50vw;
-        top: 54%;
-        left: 50%;
+        position: relative;
+        width: 200px;
+        height: 324px;
+        top: 20px;
     }
     .Mob2 {
-        position: absolute;
-        width: 50vw;
-        top: 50%;
-        left: 10%;
+        position: relative;
+        width: 200px;
+        height: 324px;
+        top: 34px;
+        left: -25.25px;
+    }
+    .viewer .container{
+        flex-direction: column;
+    }
+    .footer-lang a{
+        font-size: 15.38px;
+        font-weight: 600;
+        line-height: 19.23px;
+    }
+    .hero .app-buttons{
+        display: flex;
+        flex-direction: row;
+        width: 227.24px;
+        height: 46.19px;
+        justify-content: space-between;
+    }
+    .hero .app-buttons a img{
+        display: flex;
+        flex-direction: row;
+        width:109.17px;
+        height: 46.19px;
+        justify-content: space-between;
+    }
+    .viewer .app-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 25.95px;
+    }
+    .viewer .hero-content .app-buttons a img{
+        width: 117.53px;
+        height: 34.82px;
+    }
+    .viewer .hero-image{
+        display: flex;
+        flex-direction: row;
+        width: 367.5px;
+        height: 343.58px;
+    }
+    .footer-card .app-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    .footer-card .app-buttons a img{
+        width: 188.46px;
+        height: 61.54px;
+    }
+    .header{
+        height: 82.56px;
+    }
+    .hero .hero-content h1{
+        margin-top: 90px;
+        width: 343px;
+        height: 72px;
+        font-size: 32px;
+        font-weight:800 ;
+        line-height: 36px;
+    }
+    .hero .hero-content h5{
+        width: 227.24px;
+        height: 19.23px;
+        font-size: 15.63px;
+        font-weight: 700;
+        line-height: 18.89px;
+    }
+    .header .container{
+        justify-content:space-between ;
+    }
+    .footer-card.arabic .card-words h2,.footer-card.arabic .card-words p{
+        text-align:right;
+    }
+    .footer-background.arabic{
+        top: 512%;
     }
 }

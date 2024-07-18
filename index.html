@@ -35,7 +35,7 @@
                 <button id="en-btn" class="lang-btn">EN</button>
                 <button id="ar-btn" class="lang-btn">AR</button>
             </div>
-            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <img class="toggle-btn" onclick="toggleSidebar()" src="toggle.png" alt="" style=""></img>
         </div>
     </header>
     <aside class="sidebar" id="sidebar">
@@ -305,13 +305,13 @@
     </div>
 </section>
 <footer>
-    <div class="footer-background"></div>
+    <div class="footer-background" id="back"></div>
     <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-card">
-                <div>
+            <div class="footer-card" id="card-footer">
+                <div class="card-words">
                     <h2 data-en="Plan Your Perfect Occasion with MonasabaTech" data-ar="خطط لمناسبتك المثالية مع MonasabaTech">Plan Your Perfect Occasion with MonasabaTech</h2>
-                    <p data-en="Download MonasabaTech Now and Make Your Celebrations Unforgettable!" data-ar="حمل MonasabaTech الآن واجعل احتفالاتك لا تُنسى!">Download MonasabaTech Now and Make Your Celebrations Unforgettable!</p>
+                    <p data-en="Send your money to everywhere in the world in less than a minute! Download the app now." data-ar="أرسل أموالك إلى أي مكان في العالم في أقل من دقيقة! قم بتنزيل التطبيق الآن.">Send your money to everywhere in the world in less than a minute! Download the app now.</p>
                 </div>
                 <div class="app-buttons">
                     <a href="#"><img src="appstore.png" alt="App Store"></a>
@@ -353,6 +353,8 @@
         const dotsImage = document.getElementById('dotsImage');
         const Mob1_Image = document.getElementById('Mobile1');
         const Mob2_Image = document.getElementById('Mobile2');
+        const cardf = document.getElementById('card-footer');
+        const back_footer = document.getElementById('back');
         const pho1 = document.getElementById('pho1');
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -366,12 +368,16 @@
                     pho1.classList.add('arabic');
                     Mob1_Image.classList.add('arabic');
                     Mob2_Image.classList.add('arabic');
+                    cardf.classList.add('arabic');
+                    back_footer.classList.add('arabic');
                     
                 } else {
                     dotsImage.classList.remove('arabic');
                     Mob1_Image.classList.remove('arabic');
                     Mob2_Image.classList.remove('arabic');
                     pho1.classList.remove('arabic');
+                    cardf.classList.remove('arabic');
+                    back_footer.classList.remove('arabic');
                 }
             });
         });
