@@ -217,7 +217,7 @@ body {
 
 .dots-image.arabic {
     /* Add the style changes for the Arabic version here */
-    left: 11vw;
+    left: 19vw;
     right: auto;
 }
 
@@ -441,7 +441,24 @@ footer {
     margin: 0 auto;
     position: relative; /* Needed to position the background div */
 }
-
+.footer-lang{
+    display: flex;
+    flex-direction: row;
+}
+.footer-lang a{
+    color: white;
+    text-decoration: none;
+    margin: 0.5vw 0;
+}
+.footer-lang img{
+    width: 28px;
+    position: relative;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: #47004C;
+    border: 0;
+}
 .footer-background {
     position: relative;
     bottom: 3vw;
@@ -583,7 +600,7 @@ footer {
 
 @media (max-width: 900px) {
     .viewer{
-        height: 510px;
+        height: 660px;
     }
     .nav,
     .buttons  {
@@ -625,26 +642,28 @@ footer {
         right: 40%;
     }
     .grid-3 {
-        grid-template-rows: repeat(1, 0.8fr);
-        grid-template-columns: repeat(6, 1fr);
-        overflow-y: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
     .grid-4 {
-        grid-template-rows: repeat(1, 0.8fr);
-        grid-template-columns: repeat(8, 1fr);
-        overflow-y: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .offers .card{
+        width: 171px;
     }
     .hero-content{
         max-width: 78vw;
     }
     .phone{
         width: 200px;
-        left:30%;
-        top: 7%;
+        left: 23%;
+        top: 4%;
     }
     .phone.arabic{
-        right: 27%;
-        top: 14%;
+        right: 22%;
+        top: 7%;
+    }
+    .viewer .hero-content h1{
+        margin-top: 0;
     }
     .hero-image .dots-image.arabic{
         left: 33%;
@@ -664,10 +683,9 @@ footer {
     }
     .number-image{
         width: 30px;
-        top: auto;
     }
     .how-to-order .card{
-        width: 230px;
+        width: 171px;
         height: 249px;
     }
     .hero-image .dots-image{
@@ -689,14 +707,14 @@ footer {
         top: -85px;
     }
     .Mob1.arabic{
-        width: 41vw;
-        right: 41%;
-        top: 53%;
+        width: 60vw;
+        right: 40%;
+        top: 45%;
     }
     .Mob2.arabic{
-        width: 41vw;
-        top: 47%;
-        right: 40px;
+        width: 60vw;
+        top: 40%;
+        right: -7px;
     }
     .faq-image{
         display: none;
@@ -707,10 +725,16 @@ footer {
     .footer-card{
         bottom: 13vw;
     }
+    .footer-lang{
+        color: white;
+        text-decoration: none;
+        margin: 0.5vw 0;
+    }
 }
 @media (max-width: 700px){
     .line{
-        display: none;
+        position: relative;
+        top: 5px;
     }
     .oval2{
         top: -60%;
@@ -724,6 +748,7 @@ footer {
     }
     .hero-content h1{
         font-size: xx-large;
+        margin-top: 95px;
     }
     .hero-content p{
         font-size: 20px;
@@ -742,7 +767,7 @@ footer {
         bottom: -12px;;
     }
     .phone {
-        width: 145px;
+        width: 205px;
     }
     .questionstyle h3{
         font-size: 17px;
@@ -760,14 +785,22 @@ footer {
         max-width: 35vw;
     }
     .features .card p:first-of-type {
-        font-size:5vw;
+        font-size:16px;
     }
     .features .grid-3 .card {
-        width: 360px;
-        height: 340px;
+        width: 181px;
+        height: 250px;
+        padding: 0;
+    }
+    .features .grid-3 .card img{
+        width: 24px;
+        height: 24px;
+    }
+    .features .card p{
+        font-size: 12px;
     }
     .card p{ 
-        font-size: 18px;
+        font-size: 21px;
     }
     .footer-container{
         margin-top: -48px;
@@ -835,14 +868,14 @@ footer {
     }
     .Mob1{
         position: absolute;
-        width: 36vw;
-        top: 60%;
+        width: 50vw;
+        top: 54%;
         left: 50%;
     }
     .Mob2 {
         position: absolute;
-        width: 36vw;
-        top: 58%;
-        left: 22%;
+        width: 50vw;
+        top: 50%;
+        left: 10%;
     }
 }
