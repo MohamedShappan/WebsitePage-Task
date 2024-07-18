@@ -357,6 +357,7 @@
         const cardf = document.getElementById('card-footer');
         const back_footer = document.getElementById('back');
         const pho1 = document.getElementById('pho1');
+        const container = document.querySelectorAll('.container');
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 const lang = btn.id === 'en-btn' ? 'en' : 'ar';
@@ -371,6 +372,7 @@
                     Mob2_Image.classList.add('arabic');
                     cardf.classList.add('arabic');
                     back_footer.classList.add('arabic');
+                    container.forEach(c => c.classList.add('arabic'));
                     
                 } else {
                     dotsImage.classList.remove('arabic');
@@ -379,6 +381,7 @@
                     pho1.classList.remove('arabic');
                     cardf.classList.remove('arabic');
                     back_footer.classList.remove('arabic');
+                    container.forEach(c => c.classList.remove('arabic'));
                 }
             });
         });

@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -798,6 +798,9 @@ footer {
     .phone {
         width: 205px;
     }
+    .viewer .container.arabic .hero-content h1{
+        line-height:  105px;
+    }
     .questionstyle h3{
         font-size: 14px;
         width: 302px;
@@ -860,7 +863,13 @@ footer {
     }
     .faq{
         height: 420px;
-        margin-bottom: 153px;
+        margin-bottom: 260px;
+    }
+    footer{
+        height: 500px;
+    }
+    .footer-container{
+        bottom: 130px;
     }
     .footer-card{
         flex-direction: column;
@@ -1026,5 +1035,12 @@ footer {
     }
     .footer-background.arabic{
         top: 512%;
+    }
+    .container{
+        margin: 0;
+    }
+    .container.arabic{
+        margin: 0 auto;
+        width: 90%;
     }
 }
