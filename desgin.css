@@ -95,16 +95,15 @@ body {
 }
 
 .sidebar {
-    overflow-y: auto;
     position: fixed;
-    right: 3px;
-    top: 0;
-    height: 50%;
-    width: 200px;
-    background-color: #47004C;
-    z-index: 1000;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    display: none;
+        top: 0px;
+        right: 0px;
+        height: calc(100% - 50px);
+        width: 214px;
+        background-color: #47004C;
+        z-index: 999;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease-in-out;
 }
 
 .sidebar .close-btn {
