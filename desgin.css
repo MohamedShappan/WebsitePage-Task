@@ -211,6 +211,7 @@ header .container {
 
 .hero-content {
     position: relative;
+    right: 10%;
     top: 20%;
     max-width: 50vw;
 }
@@ -900,6 +901,9 @@ footer {
         height: 700px;
         top: -87%;
         right: 58%;
+    }
+    .hero-content{
+        right: 0px;
     }
 
     .hero-content p {
