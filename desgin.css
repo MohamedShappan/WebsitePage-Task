@@ -227,6 +227,7 @@ header .container {
 }
 
 .phone {
+    display: none;
     width: 340px;
     position: relative;
     left: 80px;
