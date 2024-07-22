@@ -266,7 +266,6 @@ header .container {
 
 .about h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .about-content {
@@ -292,9 +291,6 @@ header .container {
 }
 
 
-.about .line {
-    margin-bottom: 10px;
-}
 
 .line {
     background-color: black;
@@ -1780,5 +1776,8 @@ footer {
 
     .about-content img {
         margin-left: 0%;
+    }
+    .line{
+        margin-bottom: 10px;
     }
 }
