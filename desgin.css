@@ -114,7 +114,7 @@ header .container {
     position: fixed;
     top: 0px;
     right: 0px;
-    height: calc(100% - 50px);
+    height: 100%;
     width: 214px;
     background-color: #47004C;
     z-index: 999;
@@ -161,36 +161,41 @@ header .container {
 }
 
 .oval1 {
-    width: 80vw;
-    height: 80vw;
+    width: 1027.68px;
+    height: 1027.68px;
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    opacity: 0.09;
-    top: -57vw;
-    right: 70vw;
+    opacity: 3.61%;
+    top: -663.46px;
+    left: -785.71px;
 }
 
 .oval2 {
-    top: -713.46px;
-    right: 945px;
-    opacity: 10%;
-    width: 80vw;
-    height: 80vw;
+    top: -901.41px;
+    left: -1015.18px;
+    opacity: 4.58%;
+    width: 1468.75px;
+    height: 1467.86px;
     position: absolute;
     background-color: white;
     border-radius: 50%;
 }
 
 .oval3 {
-    width: 80vw;
-    height: 80vw;
+    width: 2002.68px;
+    height: 2001.78px;
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    top: -506.46px;
-    right: 773px;
-    opacity: 4%;
+    top: -1185.79px;
+    left: -1309.82px;
+    opacity: 5.07%;
+}
+
+.hero .app-buttons {
+    width: fit-content;
+    margin-left: -13px;
 }
 
 .wave {
@@ -211,13 +216,14 @@ header .container {
 
 .hero-content {
     position: relative;
-    right: 12%;
+    right: 4%;
     top: 20%;
     max-width: 50vw;
 }
 
 .hero-content h1 {
     font-size: 3vw;
+    margin-left: -7px;
     margin-bottom: 1rem;
 }
 
@@ -234,10 +240,10 @@ header .container {
 }
 
 .dots-image {
-    position: absolute;
+    position: relative;
     width: 8vw;
-    top: 0vw;
-    right: 12vw;
+    top: -24vw;
+    right: 4vw;
     z-index: 1;
 }
 
@@ -278,19 +284,22 @@ header .container {
 }
 
 .about-content img {
-    flex: 1;
-    width: 15vw;
+    width: 347.64px;
     /* Adjust width as needed */
     height: auto;
     /* Maintain aspect ratio */
     margin-left: 10%;
 }
 
+
+.about .line {
+    margin-bottom: 10px;
+}
+
 .line {
     background-color: black;
     height: 2px;
     width: 40px;
-    margin-bottom: 10px;
     border-radius: 30px;
 }
 
@@ -306,7 +315,7 @@ header .container {
 
 .Mob1 {
     position: relative;
-    width: 232px;
+    width: fit-content;
     height: 464px;
     left: 30px;
 }
@@ -318,7 +327,7 @@ header .container {
 
 .Mob2 {
     position: relative;
-    width: 232px;
+    width: fit-content;
     height: 464px;
     left: 10%;
     top: 4vw;
@@ -352,6 +361,7 @@ header .container {
 .grid {
     display: grid;
     gap: 3vw;
+    justify-items: center;
 }
 
 .grid-3 {
@@ -360,6 +370,14 @@ header .container {
 
 .grid-4 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.occasions .grid-3 {
+    column-gap: 66px;
+}
+
+.occasions .card {
+    width: 400px;
 }
 
 .card {
@@ -371,6 +389,28 @@ header .container {
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+}
+
+.how-to-order .grid-4 {
+    width: 100%;
+    column-gap: 109px;
+}
+
+.how-to-order .card {
+    align-content: center;
+    width: 250px;
+    height: 287px;
+}
+
+.how-to-order .card p {
+    Height: 80px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.features .card {
+    background-color: white;
 }
 
 .occasions .card img {
@@ -418,6 +458,11 @@ header .container {
     transform: translateX(-50%);
     width: 2vw;
     height: auto;
+}
+
+.features .grid-3 {
+    width: 100%;
+    column-gap: 88px;
 }
 
 .features .card {
@@ -469,6 +514,18 @@ header .container {
     margin-bottom: 0.5rem;
 }
 
+.faq-questions .faq-item p {
+    display: none;
+}
+
+.faq-questions .faq-item img {
+    cursor: pointer;
+}
+
+.faq-questions .faq-item.active p {
+    display: block;
+}
+
 .questionstyle {
     display: flex;
     flex-direction: row;
@@ -490,8 +547,13 @@ header .container {
 }
 
 .faq-image img {
-    max-width: 37%;
+    max-width: 30%;
     height: auto;
+}
+
+.viewer .hero-content .app-buttons {
+    width: fit-content;
+    margin-left: -18px;
 }
 
 footer {
@@ -648,7 +710,6 @@ footer {
 .viewer .app-buttons,
 .footer-card .app-buttons {
     display: flex;
-    margin-left: 2vw;
     flex-direction: row;
 }
 
@@ -660,31 +721,467 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .nav ul {
-        margin-right: 5%;
-        gap: 1%;
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero-content h1 {
-        font-size: 5vw;
+    .grid-3 {
+        column-gap: 20px;
     }
 
-    .hero-content p {
-        width: 50vw;
+    .features .grid-3 {
+        column-gap: 10px;
     }
 
-    .about-content {
+    .nav,
+    .buttons {
+        display: none;
+    }
+
+    .download-app-language {
+        display: none;
+    }
+
+    .header .toggle-btn {
+        padding-top: 14px;
+        display: block;
+        width: 93.5px;
+        height: 56px;
+    }
+
+    header .container {
+        gap: 69%;
+    }
+
+    .wave {
+        bottom: -35px;
+    }
+
+    .hero-content {
+        right: -10px;
+    }
+
+    .hero .app-buttons {
         flex-direction: column;
-        text-align: center;
+    }
+
+    .dots-image {
+        width: 15vw;
+        top: -31vw;
+        right: 10vw;
+    }
+
+    .dots-image.arabic {
+        left: 4vw;
+        right: auto;
     }
 
     .about-content img {
-        margin-left: 0;
-        margin-bottom: 1rem;
+        margin-left: 25%;
+    }
+
+    .how-to-order .card {
+        align-content: center;
+        width: 300px;
+        height: 287px;
+    }
+
+    .occasions .card p,
+    .offers .card p {
+        font-size: 1rem;
+    }
+
+    .offers .grid {
+        column-gap: 75px;
+    }
+
+    .occasions .card,
+    .offers .card {
+        width: 300px;
+    }
+
+    .how-to-order .card p {
+        font-size: 30px;
+    }
+
+    .how-to-order .card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .phone {
+        width: 302px;
+        position: relative;
+        left: 40px;
+    }
+
+    .about-content p {
+        width: 80%;
+    }
+
+    .about .container.arabic .about-content {
+        justify-content: center;
+    }
+
+    .about .container.arabic .about-content img {
+        margin-left: 0%;
+    }
+
+    .features .card {
+        height: auto;
+        width: 80%;
+    }
+
+    .viewer {
+        height: 810px;
+    }
+
+    .Mob1 {
+        left: -3%;
+        top: 42%;
+        width: 275px;
+    }
+
+    .phone.arabic {
+        left: -22%;
+    }
+
+    .Mob1.arabic {
+        right: -106%;
+        top: 40%;
+    }
+
+    .Mob2 {
+        left: -85%;
+        top: -17vw;
+        width: 275px;
+    }
+
+    .Mob2.arabic {
+        top: -30%;
+        left: 16%;
+    }
+
+    .viewer .hero-content {
+        top: -3%;
+    }
+
+    .faq-image img {
+        display: none;
+    }
+
+    .faq .faq-questions {
+        width: 100%;
+    }
+
+    .faq-content {
+        flex-direction: column;
+    }
+
+    .faq-item h3 {
+        width: 80%;
+    }
+
+    .faq-item p {
+        width: 90%;
+    }
+
+    .faq {
+        margin-bottom: 35%;
+    }
+
+    footer {
+        height: 384px;
+    }
+
+    .footer-background {
+        display: none;
+    }
+
+    .footer-container {
+        bottom: 130px;
+    }
+
+    .footer-card {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95%;
+        height: 387.85px;
+        padding: 46.15px 16px 46.15px 16px;
+        gap: 40px;
+        border-radius: 30.77px;
+    }
+
+    .card-words {
+        display: flex;
+        gap: 60px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+
+    .footer-card div h2 {
+        width: 80%;
+        height: 47px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .footer-card div p {
+        width: 80%;
+        height: 47px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.08px;
+    }
+
+    .footer-card .app-buttons {
+        display: flex;
+        gap: 23px;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+
+    .social-media-icons img {
+        width: 3vw;
+        height: 3vw;
     }
 }
 
 @media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        column-gap: 20px;
+    }
+
+    .features .grid-3 {
+        column-gap: 10px;
+    }
+
+    .nav,
+    .buttons {
+        display: none;
+    }
+
+    .download-app-language {
+        display: none;
+    }
+
+    .header .toggle-btn {
+        padding-top: 14px;
+        display: block;
+        width: 93.5px;
+        height: 56px;
+    }
+
+    header .container {
+        gap: 69%;
+    }
+
+    .wave {
+        bottom: -25px;
+    }
+
+    .hero-content {
+        right: -10px;
+    }
+
+    .hero .app-buttons {
+        flex-direction: column;
+    }
+
+    .dots-image {
+        width: 15vw;
+        top: -60vw;
+        right: -27vw;
+    }
+
+    .dots-image.arabic {
+        left: -13vw;
+        right: auto;
+    }
+
+    .phone {
+        width: 302px;
+        position: relative;
+        left: 40px;
+    }
+
+    .about-content p {
+        width: 80%;
+    }
+
+    .occasions .card {
+        width: 80%;
+    }
+
+    .features .card {
+        height: auto;
+        width: 80%;
+    }
+
+    .viewer {
+        height: 810px;
+    }
+
+    .Mob1 {
+        right: 110%;
+        top: 42%;
+    }
+
+    .Mob1.arabic {
+        right: -106%;
+        top: 40%;
+    }
+
+    .Mob2 {
+        left: -104%;
+        top: -20vw;
+    }
+
+    .Mob2.arabic {
+        top: -30%;
+        left: 16%;
+    }
+
+    .viewer .hero-content {
+        top: -3%;
+    }
+
+    .faq-image img {
+        display: none;
+    }
+
+    .faq .faq-questions {
+        width: 100%;
+    }
+
+    .faq-content {
+        flex-direction: column;
+    }
+
+    .faq-item h3 {
+        width: 80%;
+    }
+
+    .faq-item p {
+        width: 90%;
+    }
+
+    .faq {
+        margin-bottom: 35%;
+    }
+
+    footer {
+        height: 384px;
+    }
+
+    .footer-background {
+        display: none;
+    }
+
+    .footer-container {
+        bottom: 130px;
+    }
+
+    .footer-card {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95%;
+        height: 387.85px;
+        padding: 46.15px 16px 46.15px 16px;
+        gap: 40px;
+        border-radius: 30.77px;
+    }
+
+    .card-words {
+        display: flex;
+        gap: 60px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+
+    .footer-card div h2 {
+        width: 80%;
+        height: 47px;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    .footer-card div p {
+        width: 80%;
+        height: 47px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.08px;
+    }
+
+    .footer-card .app-buttons {
+        display: flex;
+        gap: 23px;
+    }
+
+    .footer-links a {
+        font-size: 18px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+
+    .social-media-icons img {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+@media (max-width: 540px) {
+    header .container {
+        gap: 40%;
+    }
+
+    .how-to-order .card p {
+        font-size: 15px;
+    }
+
+    .viewer .hero-content .app-buttons {
+        margin-left: 0px;
+    }
+
+    .features .grid-3 {
+        width: 100%;
+        column-gap: 0px;
+        justify-items: center;
+    }
+
+    .how-to-order .grid-4 {
+        column-gap: 10px;
+        justify-items: center;
+    }
+
+    .occasions .grid-3 {
+        column-gap: 10px;
+    }
+
     .viewer {
         height: 656.41px;
     }
@@ -741,6 +1238,7 @@ footer {
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
+        justify-items: center;
     }
 
     .grid-4 {
@@ -818,8 +1316,8 @@ footer {
 
     .hero-image .dots-image {
         width: 75px;
-        top: 70%;
-        left: 60%;
+        top: -73%;
+        left: -6%;
     }
 
     .about-content {
@@ -829,14 +1327,14 @@ footer {
 
     .about-content p {
         text-align: left;
-        width: 221px;
+        width: 59%;
         font-size: 12px;
     }
 
     .about-content img {
         content: url("aboutlogo.png");
-        width: 92px;
-        height: 70.62px;
+        width: 30%;
+        height: 30%;
     }
 
     .Mob2 {
@@ -872,9 +1370,7 @@ footer {
         text-decoration: none;
         margin: 0 0 3.5vw 0;
     }
-}
 
-@media (max-width: 700px) {
     .content {
         display: flex;
         flex-direction: column;
@@ -902,7 +1398,8 @@ footer {
         top: -87%;
         right: 58%;
     }
-    .hero-content{
+
+    .hero-content {
         right: 0px;
     }
 
@@ -976,23 +1473,22 @@ footer {
         ;
     }
 
-    .about-content img {
-        width: 91px;
-    }
-
     .occasions .container .grid-3 .card img {
         width: 55.2px;
         height: 39.6px;
     }
-    .offers .card img{
+
+    .offers .card img {
         width: 82px;
         height: 48px;
     }
-    .how-to-order .card img{
+
+    .how-to-order .card img {
         width: 60.8px;
         height: 60.8px;
     }
-    .how-to-order .card .number-image{
+
+    .how-to-order .card .number-image {
         width: 32px;
         height: 34px;
     }
@@ -1039,7 +1535,7 @@ footer {
 
     .faq {
         height: 420px;
-        margin-bottom: 260px;
+        margin-bottom: 80%;
     }
 
     footer {
@@ -1176,6 +1672,10 @@ footer {
         justify-content: space-between;
     }
 
+    .faq-questions .faq-item.active p {
+        margin: revert;
+    }
+
     .hero .app-buttons a img {
         display: flex;
         flex-direction: row;
@@ -1273,10 +1773,12 @@ footer {
         gap: 0px;
         align-items: center;
     }
-}
 
-@media(max-width:363px) {
-    body {
-        width: 104%;
+    .offers .grid {
+        column-gap: 28px;
+    }
+
+    .about-content img {
+        margin-left: 0%;
     }
 }
