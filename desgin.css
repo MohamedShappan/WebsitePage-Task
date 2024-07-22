@@ -1273,8 +1273,8 @@ footer {
     }
 
     .hero-image .dots-image.arabic {
-        left: 25%;
-        top: 70%;
+        left: 5%;
+        top: -75%;
     }
 
     .offer .card p {
@@ -1299,7 +1299,7 @@ footer {
     }
 
     .number-image {
-        left: 0.6px;
+        left: 10.6px;
         top: 0.14px;
         width: 32px;
         height: 34px;
@@ -1380,8 +1380,8 @@ footer {
     }
 
     .oval1 {
-        top: -46vw;
-        right: 79vw;
+        top: -190vw;
+        right: 72vw;
     }
 
     .oval2 {
@@ -1392,7 +1392,7 @@ footer {
         width: 700px;
         height: 700px;
         top: -87%;
-        right: 58%;
+        right: 40%;
     }
 
     .hero-content {
@@ -1491,7 +1491,7 @@ footer {
 
     .features .card p:first-of-type {
         font-size: 14px;
-        
+
         width: 158px;
         line-height: 20px;
         font-weight: 600;
@@ -1503,7 +1503,7 @@ footer {
         padding: 0;
         border-radius: 8px;
         gap: 18px;
-            box-shadow: 0 0px 0px rgba(255, 255, 255, 0.932);
+        box-shadow: 0 0px 0px rgba(255, 255, 255, 0.932);
     }
 
     .features .grid-3 .card img {
@@ -1779,7 +1779,8 @@ footer {
     .about-content img {
         margin-left: 0%;
     }
-    .line{
+
+    .line {
         margin-bottom: 10px;
     }
 }
