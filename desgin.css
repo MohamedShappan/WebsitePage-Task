@@ -1559,7 +1559,7 @@ footer {
     .card-words {
         display: flex;
         gap: 60px;
-        padding-left: 20px;
+        padding-left: 5px;
         flex-direction: column;
         text-align: left;
     }
