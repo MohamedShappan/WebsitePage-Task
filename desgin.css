@@ -1491,6 +1491,7 @@ footer {
 
     .features .card p:first-of-type {
         font-size: 14px;
+        
         width: 158px;
         line-height: 20px;
         font-weight: 600;
@@ -1502,6 +1503,7 @@ footer {
         padding: 0;
         border-radius: 8px;
         gap: 18px;
+            box-shadow: 0 0px 0px rgba(255, 255, 255, 0.932);
     }
 
     .features .grid-3 .card img {
